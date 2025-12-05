@@ -83,7 +83,7 @@ function CollectionatorReplicateScannerFrameMixin:BatchStep(start, limit)
   while i <= actualLimit do
     local link = self.fullScan[i].itemLink
 
-    if GlobalFilterLink(link) then
+    if link and GlobalFilterLink(link) then
       if self:FilterLink(link) then
         Item:CreateFromItemID(self.fullScan[i].replicateInfo[17]):ContinueOnItemLoad((function(index, link)
           return function()
