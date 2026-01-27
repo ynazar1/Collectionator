@@ -56,5 +56,5 @@ function CollectionatorSummaryTabFrameMixin:RecipeMode()
 end
 
 function CollectionatorSummaryTabFrameMixin:OpenOptions()
-  Settings.OpenToCategory(COLLECTIONATOR_L_COLLECTIONATOR)
+  Settings.OpenToCategory(Collectionator.SettingsCategory:GetID())
 end
