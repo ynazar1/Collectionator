@@ -64,5 +64,5 @@ function CollectionatorReplicateTabFrameMixin:RecipeMode()
 end
 
 function CollectionatorReplicateTabFrameMixin:OpenOptions()
-  Settings.OpenToCategory(COLLECTIONATOR_L_COLLECTIONATOR)
+  Settings.OpenToCategory(Collectionator.SettingsCategory:GetID())
 end

@@ -17,7 +17,7 @@ function CollectionatorConfigBasicOptionsFrameMixin:OnLoad()
   self.OnRefresh = function() end
 
   local category = Settings.RegisterCanvasLayoutCategory(self, self.name)
-  category.ID = self.name
+  Collectionator.SettingsCategory = category
   Settings.RegisterAddOnCategory(category)
 end
 
